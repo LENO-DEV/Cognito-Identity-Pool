@@ -1,0 +1,47 @@
+{
+  "name": "fullsite-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "amazon-cognito-identity-js": "^4.5.5",
+    "aws-sdk": "^2.817.0",
+    "aws-signature-v4": "^1.4.0",
+    "aws4": "^1.11.0",
+    "aws4-axios": "^2.0.1",
+    "aws4fetch": "^1.0.13",
+    "axios": "^0.20.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.4",
+    "react": "^16.13.1",
+    "react-cookie": "^4.0.3",
+    "react-dom": "^16.13.1",
+    "react-google-login": "^5.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
+    "verify-cognito-token": "^1.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
