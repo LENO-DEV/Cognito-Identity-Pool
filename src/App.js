@@ -14,7 +14,7 @@ const App = () => {
   const responseGoogle = (res) => {
     if (res) {
       const { profileObj } = res;
-      setCookie('Profiles', profileObj);
+      setCookie('Profiles', profileObj)
       AWS.config.update({ region: 'ap-south-1' });
       AWS.config.credentials = new AWS.CognitoIdentityCredentials({
         IdentityPoolId: 'ap-south-1:4979d70f-ee73-4f5d-xxxxxxxx...', // I'Pool can be access from AWS Console......
