@@ -17,6 +17,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     userPool.signUp(username, password, [], null, (err, data) => {
+      console.log(data);
       if (err) console.log(err);
       else setHideSuccess(true);
     });
@@ -28,12 +29,16 @@ const Signup = () => {
       Username: username,
       Pool: userPool
     });
+  
     user.confirmRegistration(code, true, (err, data) => {
+      console.log(data);
+
       if (err) {
         setMessage({ ...message, error: true, message: 'Invalid Id!!! 😠' });
       }
       else setMessage({ ...message, Success: true, message: 'Verification Complete!!! 😃' });
     });
+    
   }
 
 

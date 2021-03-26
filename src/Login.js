@@ -18,7 +18,8 @@ const Login = () => {
     try {
       const res = await authenicate(email, password);
       if (res) {
-        window.location.reload();
+        // window.location.reload();
+        console.log(res);
         setMessage({ Success: true, message: 'Login Successs!!' });
       }
     } catch (error) {
