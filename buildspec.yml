@@ -8,19 +8,20 @@ phases:
     commands:
       - echo Entered the install phase...
       - apt-get update -y
-      - apt-get install -y npm
+      - apt-get install -y yarn
     finally:
       - echo This always runs even if the update or install command fails 
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-    finally:
+      - yarn install
+      finally:
       - echo This always runs even if the login command fails 
   build:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - npm install
+      - yarn build
     finally:
       - echo This always runs even if the install command fails
   post_build:
